@@ -14,7 +14,7 @@ const[loading,setLoading]=useState(false)
     const res = await axios.get(url)
     const result = res.data.results;
        setUser(result)
-       localStorage.setItem("user", JSON.stringify(result));
+       localStorage.setItem("users", JSON.stringify(result));
   }catch(err){
     console.log("Data not fetching",err)
   }finally{
